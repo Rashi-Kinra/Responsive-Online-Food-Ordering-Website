@@ -1,0 +1,128 @@
+/* phone.css is triggered when the max-width of screen is less than 1175px */
+
+
+/* Navigation Section */
+#navbar{
+  flex-direction: column;
+  left:0;
+}
+
+#logo {
+    margin: 8px 35px;
+}
+
+#navbar ul li a {
+    font-size: 1.2rem;
+    padding: 1px 20px;
+}
+
+
+/* Home Section */
+#home{
+  height:351px;
+  left:0;
+  padding: 20px 200px 0px;
+}
+
+#home::before{
+  height:480px;
+  opacity: 0.32;
+}
+
+#home p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+#home h1 {
+    margin-bottom: 24px;
+}
+
+#home h2 {
+    font-size: 1.45rem;
+    margin-bottom: 16px;
+}
+
+
+/* Services Section */
+#services{
+  flex-direction: column;
+}
+
+.services-container{
+  margin-top: 0;
+  padding-bottom: 75px;
+}
+
+.services-container h1 {
+    padding-top: 59px;
+    padding-bottom: 28px;
+}
+
+#services .box {
+    padding: 30px;
+    height: 326px;
+    width: 638px;
+    margin: 20px 100px;
+}
+
+#services .box img {
+    height: 162px;
+    width: 241px;
+}
+
+
+/* Tie-Ups Section */
+#tieups-section {
+  height: 380px;
+}
+
+#tieups-section h1{
+  padding-top: 18px;
+}
+
+
+/* Contact Section */
+#contact-box{
+  padding-bottom: 34px;
+}
+
+#contact-box label{
+  font-size: 1rem;
+}
+
+#contact-box input, #contact-box textarea{
+  margin-bottom: 7px;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+.butn{
+  width: 409px;
+}
+
+
+/* Footer Section */
+footer{
+  padding: 6px 20px;
+}
+
+
+/* Utility Classes */
+.h-primary {
+    font-size: 2.2rem;
+}
+
+.h-secondary{
+  font-size: 1.45rem;
+}
+
+.btn {
+    font-size: 1.2rem;
+    padding: 5px 14px;
+}
+
+.btn:hover {
+    font-size: 1.2rem;
+    padding: 5px 14px;
+}

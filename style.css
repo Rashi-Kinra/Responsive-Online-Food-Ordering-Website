@@ -1,0 +1,316 @@
+/* Reset CSS */                /* Resetting default css using universal selector * */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+/* Navigation Bar */
+#navbar{
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#navbar::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.15;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+  margin: 10px 35px;
+}
+
+#logo img{
+  height: 50px;
+  margin: 3px 6px;
+}
+
+
+/* Navigation Bar:- List styling */
+#navbar ul{
+  display: flex;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-weight: bold;
+}
+
+#navbar ul li{
+  list-style: none;    /* so that the bullet types dont come */
+  font-size: 1.2rem;
+}
+
+#navbar ul li a {
+  color: #02383C;
+  padding: 3px 22px;       /* padding given in anchor tag and not in li, so that the empty padded area is also covered in hovering. */
+  border-radius: 20px;
+  text-decoration: none;   /* So that there is no underline under anchor tag. */
+  display: block;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Home Section */
+#home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 200px;
+  height: 560px;
+}
+
+#home::before{
+  content: "";
+  background: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left:0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.37;
+}
+
+#home h1{
+  color: #395B64;
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+  margin-bottom: 28px;
+}
+
+#home h2{
+  text-align: center;
+  color: #395B64;
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  margin-bottom: 20px;
+}
+
+#home p{
+  text-align: center;
+  color: #395B64;
+  font-size: 1.2rem;
+  font-family: 'Bree Serif', serif;
+  margin-bottom: 20px;
+}
+
+
+/* Services Section */
+.services-container h1{
+  color: #395B64;
+  padding-top: 64px;
+  padding-bottom: 50px;
+}
+
+.services-container h2{
+  margin-top: 15px;
+}
+
+.services-container{
+  background-color: #FFEDED;
+  margin-top: 74px;
+  padding-bottom: 100px;
+}
+
+#services{
+  margin: 34px;
+  display: flex;
+}
+
+#services .box{
+  border: 2px solid #395B64;
+  padding: 30px;
+  height: 350px;
+  width:750px;
+  margin: 3px 35px;
+  border-radius: 24px;
+  background-color: #FFE6E6;
+}
+
+#services .box img{
+  height: 160px;
+  width: 250px;
+  margin: auto;
+  display: block;   
+}
+
+#services .box p{
+  font-family: 'Bree Serif', serif;
+  padding: 5px;
+}
+
+
+/* Client's Section */
+#tieups-section{
+  position: relative;
+  height:400px;
+}
+
+#tieups{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#tieups img{
+  margin-top: 20px;
+  height: 120px;
+  width: 140px;
+  background-color: white;
+  border-radius: 14px;
+  border: 2px solid #395B64;
+}
+
+.tieup-item{
+  padding: 50px;
+}
+
+#tieups-section::before{
+  content: "";
+  position: absolute;
+  background: url('https://images.pexels.com/photos/5946083/pexels-photo-5946083.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+
+/* Contact Section */
+#contact{
+  position: relative;
+}
+
+#contact::before{
+  content: "" ;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.32;
+  background: url('https://images.pexels.com/photos/4831/hands-coffee-smartphone-technology.jpg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover ;
+}
+
+#contact-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+
+#contact-box input, #contact-box textarea{
+  margin-bottom: 10px;
+  width:100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  border: 2px solid #395B64;
+  font-size: 1.1rem;
+  background-color: #FFE6E6;
+}
+
+#contact-box form{
+  width: 40%;
+}
+
+#contact-box label{
+  font-size: 1.28rem;
+  font-family: 'Bree Serif', serif;
+  color: #395B64;
+}
+
+.butn{
+  display: flex;
+  width: 622px;
+  align-items: center;
+  justify-content: center;
+}
+
+.butn button{
+  background-color: #395B64;
+  color: white;
+}
+
+.butn button:hover{
+  padding: 6px 20px;
+  border: 2px solid #395B64;
+  background-color: #94B49F;
+  color: #395B64;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/* Footer Section*/
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+  height: 20px;
+}
+
+
+/* Utility Classes */
+.h-primary{
+  font-size: 3.2rem;
+  padding: 12px;
+  font-family: 'Bree Serif', serif;
+  color: #395B64;
+}
+
+.h-secondary{
+  padding: 12px;
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  color: #395B64;
+}
+
+.btn{
+  padding: 6px 20px;
+  border: 2px solid #395B64;
+  background-color: #FF8C32;
+  color: #395B64;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  padding: 6px 20px;
+  border: 2px solid green;
+  background-color: #FFB562;
+  color: green;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.center{
+  text-align: center;
+}
