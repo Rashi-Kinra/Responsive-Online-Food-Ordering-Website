@@ -25,7 +25,7 @@
 }
 
 #home::before{
-  height:486px;
+  height:490px;
   opacity: 0.25;
 }
 
@@ -93,7 +93,7 @@
 }
 
 #contact-box label{
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 #contact-box input, #contact-box textarea{
