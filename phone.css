@@ -12,7 +12,7 @@
 }
 
 #navbar ul li a {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     padding: 1px 20px;
 }
 
@@ -21,25 +21,26 @@
 #home{
   height:351px;
   left:0;
-  padding: 20px 200px 0px;
+  padding: 20px 140px 0px;
 }
 
 #home::before{
-  height:480px;
-  opacity: 0.32;
+  height:486px;
+  opacity: 0.25;
 }
 
 #home p {
-    font-size: 1rem;
+    font-size: 1.24rem;
     margin-bottom: 16px;
 }
 
 #home h1 {
+    font-size: 2.28rem; 
     margin-bottom: 24px;
 }
 
 #home h2 {
-    font-size: 1.45rem;
+    font-size: 1.58rem;
     margin-bottom: 16px;
 }
 
@@ -69,6 +70,10 @@
 #services .box img {
     height: 162px;
     width: 241px;
+}
+
+#services .box p {
+    font-size: 1.25rem;
 }
 
 
@@ -114,7 +119,7 @@ footer{
 }
 
 .h-secondary{
-  font-size: 1.45rem;
+  font-size: 1.465rem;
 }
 
 .btn {
